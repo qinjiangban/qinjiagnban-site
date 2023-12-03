@@ -1,0 +1,15 @@
+.Novice {
+
+}
+.link{
+    margin: 10px;
+    background: transparent;
+}
+hr {
+    height: 1px;
+    background: rgba(204, 204, 204, 0.3);
+}
+
+.img {
+    width: 400px;
+}

@@ -1,0 +1,67 @@
+:root {
+	/* docs */
+	--nextra-primary-hue: 45deg;
+	--nextra-primary-saturation: 86.45%;
+}
+.dark {
+	/* docs */
+	--nextra-primary-hue: 45deg;
+	/* 主要色调 */
+	--nextra-primary-saturation: 86.45%;
+	/* 初级饱和度 */
+
+}
+
+.nx-inset-x-0 {
+    font-size: 1rem !important;
+}
+
+.nx-inset-x-0:hover {
+    font-size: 1rem !important;
+    color: #d59d16;
+}
+
+.nx-text-center {
+    text-align: center !important;
+    font-size: 1rem !important;
+}
+.nx-text-center:hover {
+    text-align: center !important;
+    font-size: 1rem !important;
+    color: #d59d16;
+}
+
+.nx-whitespace-nowrap{
+    font-size: 1rem !important;
+    color: #d59d16;
+}
+
+:is(html[class~=dark] .dark\:nx-bg-neutral-800) {
+    --tw-bg-opacity: 1;
+color: #d59d16;
+}
+
+@media only screen and (max-width: 767px) {
+    .nx-text-current {
+        color: currentColor;
+        display: none;
+    }
+}
+
+/*--选择器----*/
+::selection {
+    background: #d59d16;
+    color: var(--shiki-color);
+}
+
+::-moz-selection {
+    color: var(--shiki-color);
+    background: #d59d16;
+}
+
+@media screen and (min-width:701px) {
+	html {
+		overflow-y: scroll;
+		height: 100%;
+	}
+}

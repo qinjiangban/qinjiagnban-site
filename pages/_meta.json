@@ -1,0 +1,49 @@
+{
+    "*": {
+        "type": "page"
+    },
+    "index": {
+        "title": "首页",
+        "theme": {
+            "layout": "raw",
+            "breadcrumb": false,
+            "footer": false,
+            "sidebar": false,
+            "toc": false,
+            "pagination": false
+        }
+    },
+    "Novice": {
+        "title": "新手",
+        "theme": {
+            "layout": "raw",
+            "breadcrumb": false,
+            "footer": false,
+            "sidebar": false,
+            "toc": false,
+            "pagination": false
+        }
+    },
+    "blog": {
+        "title": "博客",
+        "theme": {
+            "typesetting": "article",
+
+            "breadcrumb": false,
+            "footer": false,
+            "sidebar": true,
+            "toc": true,
+            "pagination": false
+        }
+    },
+    "docs": {
+        "title": "文档",
+        "theme": {
+            "breadcrumb": true,
+            "footer": false,
+            "sidebar": true,
+            "toc": true,
+            "pagination": true
+        }
+    }
+}

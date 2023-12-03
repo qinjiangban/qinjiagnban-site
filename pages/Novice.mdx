@@ -1,0 +1,47 @@
+
+import Link from 'next/link';
+
+import okx from '../public/okx.jpg';
+import bnb from '../public/bnb.jpg';
+export default function Novice() {
+    const Dataimg = [
+    {
+        h1: '欧易交易所注册邀请链接',
+        link: 'https://ouxyi.clinic/join/7098194',
+        name: 'www.okx.com',
+        img: okx,
+    },
+    {
+        h1: '币安交易所注册邀请链接',
+        link: 'https://accounts.binance.com/register?ref=116428206',
+        name: 'www.binance.com',
+        img: bnb,
+    },
+]
+    return (
+        <>
+
+
+
+
+
+               
+                    <ul>
+                        {Dataimg.map((dataimg) => (
+                            <li>
+                                <h1>{dataimg.h1}:
+                                    <Link href={dataimg.link}>
+                                        {dataimg.name}
+                                    </Link>
+                                </h1>
+                                <img src={dataimg.img} className='img' />
+                            </li>
+                        ))}
+                    </ul>
+           
+
+     
+        </>
+    );
+}
+
