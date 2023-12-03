@@ -5,7 +5,7 @@
     "index": {
         "title": "首页",
         "theme": {
-            "layout": "raw",
+            "layout": "full",
             "breadcrumb": false,
             "footer": false,
             "sidebar": false,
@@ -16,7 +16,7 @@
     "Novice": {
         "title": "新手",
         "theme": {
-            "layout": "raw",
+            "layout": "full",
             "breadcrumb": false,
             "footer": false,
             "sidebar": false,
@@ -32,7 +32,7 @@
             "breadcrumb": false,
             "footer": false,
             "sidebar": true,
-            "toc": true,
+            "toc": false,
             "pagination": false
         }
     },
