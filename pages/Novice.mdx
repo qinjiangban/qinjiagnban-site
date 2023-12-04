@@ -28,12 +28,12 @@ export default function Novice() {
                
                     <ul>
                         {Dataimg.map((dataimg) => (
-                            <li>
-                                <h1>{dataimg.h1}:
-                                    <Link href={dataimg.link}>
+                            <li className='Novice_li'>
+                                {dataimg.h1}:
+                                    <Link href={dataimg.link} target="_blank">
                                         {dataimg.name}
                                     </Link>
-                                </h1>
+                                
                                 <img src={dataimg.img} className='img' />
                             </li>
                         ))}

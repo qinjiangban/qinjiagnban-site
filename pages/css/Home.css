@@ -1,0 +1,41 @@
+.Home_b {
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(126.33deg, #dcad3fd5 26.26%, #f0c244e5 108.32%);
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.font_size {
+    font-size: 2rem;
+}
+
+.Cards {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.Card {
+    width: 100px;
+    box-shadow: 0 0 2px #dcae3f;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card:hover {
+    color: #000;
+    transition: all 0.8s;
+    box-shadow: 0 0 0.9rem #dcae3f;
+    background: linear-gradient(126.33deg, #dcae3f 26.26%, #f0c144 108.32%);
+
+}

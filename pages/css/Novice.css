@@ -1,15 +1,24 @@
-.Novice {
+.Novice {}
 
+.Novice_li {
+    list-style: none;
+    font-size: 1.5rem;
 }
-.link{
+
+.Novice_li a {
+    color: #d59d16;
+}
+
+.link {
     margin: 10px;
     background: transparent;
 }
+
 hr {
     height: 1px;
     background: rgba(204, 204, 204, 0.3);
 }
 
 .img {
-    width: 400px;
+    width: 300px;
 }

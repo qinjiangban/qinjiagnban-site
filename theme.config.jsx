@@ -36,13 +36,13 @@ export default {
   navbar: {
     extraContent: (
       < >
-        <Link href="https://github.com/qinjiangban">
+        <Link href="https://github.com/qinjiangban" target="_blank">
           <FaGithub
             alt="Github"
             style={{ width: "27.5px", height: "27.5px" }}
           />
         </Link>
-        <Link href="https://twitter.com/qinjiangban">
+        <Link href="https://twitter.com/qinjiangban" target="_blank">
           <FaSquareXTwitter
             alt="X"
             style={{ width: "27.5px", height: "27.5px" }}

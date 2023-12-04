@@ -5,7 +5,7 @@
     "index": {
         "title": "首页",
         "theme": {
-            "layout": "full",
+            "layout": "raw",
             "breadcrumb": false,
             "footer": false,
             "sidebar": false,
