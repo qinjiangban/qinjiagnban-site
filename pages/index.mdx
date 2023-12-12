@@ -1,41 +1,41 @@
-import Link from 'next/link';
-import { Callout,Cards, Card } from "nextra/components";
-
+import Link from "next/link";
+import { Callout, Cards, Card } from "nextra/components";
+import { FaSquareXTwitter, FaGithub } from "react-icons/fa6";
 
 export default function Home() {
-
   return (
     <>
+      <div className="Home">
+        <div className="Home_b">
+          <div className="font_size">QinJiangBan Site</div>
 
-      <div className='Home'>
-
-       <div className='Home_b'>
-       <div className='font_size'>QinJiangBan Site</div>
-
-<Callout type="warning" emoji="⚠">
-  网站所有内容仅用于学习参考，不构成任何投资建议！
-</Callout>
-
-       </div>
- 
- 
-        <div className='Cards'>
-
-           <Link href="/Novice" className='Card'>
-              新手 🚀
-          </Link>
-
-          <Link href="/docs" className='Card'>
-              文档 📖
-          </Link>
-
-          <Link href="/blog" className='Card'>
-              博客 📰
-          </Link>
-
+          <Callout type="warning" emoji="⚠">
+            网站所有内容仅用于学习参考，不构成任何投资建议！
+          </Callout>
         </div>
 
+        <div className="Cards">
+          <Link href="/Novice" className="Card">
+            新手 🚀
+          </Link>
 
+          <Link href="/docs" className="Card">
+            文档 📖
+          </Link>
+
+          <Link href="/blog" className="Card">
+            博客 📰
+          </Link>
+        </div>
+
+        <div className="Cards_1">
+          <Link href="https://github.com/qinjiangban" target="_blank">
+            <FaGithub alt="Github" className="Fa" />
+          </Link>
+          <Link href="https://twitter.com/qinjiangban" target="_blank">
+            <FaSquareXTwitter alt="X" className="Fa" />
+          </Link>
+        </div>
       </div>
     </>
   );

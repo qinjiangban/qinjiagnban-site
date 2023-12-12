@@ -1,6 +1,6 @@
 import "./css/www.css";
-import './css/Novice.css';
-import './css/Home.css'
+import "./css/Novice.css";
+import "./css/Home.css";
 
 import { Inter } from "next/font/google";
 

@@ -8,7 +8,9 @@
 .Novice_li a {
     color: #d59d16;
 }
-
+.Novice_li a:hover {
+    color: #feb200;
+}
 .link {
     margin: 10px;
     background: transparent;

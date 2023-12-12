@@ -1,9 +1,29 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaSquareXTwitter, FaGithub } from "react-icons/fa6";
+
 const Placeholder = () => {
-  return <>搜索文档</>;
+  return "搜索文档";
 };
+
+const Feedback = () => {
+  return "给我们反馈问题↗";
+};
+const EditLink = ({ filePath, className }) => {
+  return (
+    <a
+      href={`https://github.com/qinjiangban/qinjiangban-site/${filePath}`}
+      className={className}
+      target="_blank"
+    >
+      在 GitHub 上编辑此页面↗
+    </a>
+  );
+};
+const GitTimestamp = ({ timestamp }) => {
+  return <>更新时间:{timestamp.toLocaleString()}</>;
+};
+
 export default {
   //搜索引擎优化选项
   useNextSeoProps() {
@@ -18,8 +38,8 @@ export default {
   ),
 
   logo: <Image src="/favicon.ico" width={40} height={40} alt="logo" />,
-  earch: { placeholder: Placeholder },
-/*   project: {
+  search: { placeholder: Placeholder },
+  /*   project: {
     link: "https://github.com/qinjiangban",
   },
   chat: {
@@ -34,26 +54,11 @@ export default {
 
   //自定义导航栏
   navbar: {
-    extraContent: (
-      < >
-        <Link href="https://github.com/qinjiangban" target="_blank">
-          <FaGithub
-            alt="Github"
-            style={{ width: "27.5px", height: "27.5px" }}
-          />
-        </Link>
-        <Link href="https://twitter.com/qinjiangban" target="_blank">
-          <FaSquareXTwitter
-            alt="X"
-            style={{ width: "27.5px", height: "27.5px" }}
-          />
-        </Link>
-      </>
-    ),
+    extraContent: <></>,
   },
 
   //指向文档存储库的链接字符串
-  docsRepositoryBase: "https://github.com/Qiancset/Qiancset-Site/tree/dev",
+  docsRepositoryBase: "https://github.com/qinjiangban/qinjiangban-site",
 
   //侧边栏
   sidebar: {
@@ -67,9 +72,14 @@ export default {
     title: "页面目录", //标题
     //backToTop: true //添加“滚动到顶部”链接
   },
+  //反馈链接
+  feedback: { content: Feedback },
+  //编辑链接
+  editLink: { component: EditLink },
+  //呈现上次更新日期的函数
+  gitTimestamp: GitTimestamp,
 
   //页脚
-  footer: {
-    text: <div className="版权">Copyright © 2023 Qiancset 千赛特 版权所有</div>,
-  },
+  footer: {},
 };
+
