@@ -7,16 +7,15 @@ const Placeholder = () => {
 };
 
 const Feedback = () => {
-  return "给我们反馈问题↗";
+  return "反馈问题↗";
 };
 const EditLink = ({ filePath, className }) => {
   return (
     <a
-      href={`https://github.com/qinjiangban/qinjiangban-site/${filePath}`}
+      href={`https://github.com/qinjiangban/qinjiangban-site/tree/main/${filePath}`}
       className={className}
-      target="_blank"
-    >
-      在 GitHub 上编辑此页面↗
+      target='_blank'>
+      编辑此页↗
     </a>
   );
 };
@@ -33,11 +32,11 @@ export default {
   },
   head: (
     <>
-      <link rel="icon" href="/favicon.ico" type="/favicon.ico" />
+      <link rel='icon' href='/favicon.ico' type='/favicon.ico' />
     </>
   ),
 
-  logo: <Image src="/favicon.ico" width={40} height={40} alt="logo" />,
+  logo: <Image src='/favicon.ico' width={40} height={40} alt='logo' />,
   search: { placeholder: Placeholder },
   /*   project: {
     link: "https://github.com/qinjiangban",
@@ -82,4 +81,3 @@ export default {
   //页脚
   footer: {},
 };
-
