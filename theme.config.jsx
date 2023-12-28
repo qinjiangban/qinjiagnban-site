@@ -36,7 +36,7 @@ export default {
     </>
   ),
 
-  logo: <Image src='/favicon.ico' width={40} height={40} alt='logo' />,
+  logo: <Image src='/favicon.ico' width={40} height={40} alt='logo' style={{borderRadius:'50%'}}/>,
   search: { placeholder: Placeholder },
   /*   project: {
     link: "https://github.com/qinjiangban",

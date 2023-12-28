@@ -27,6 +27,8 @@
 }
 
 .Card {
+    font-weight: bold;
+    font-weight: 700;
     width: 100px;
     box-shadow: 0 0 2px #dcae3f;
     padding: 10px;
@@ -37,11 +39,10 @@
 }
 
 .Card:hover {
-    color: #000;
+
     transition: all 0.8s;
     box-shadow: 0 0 0.9rem #dcae3f;
     background: linear-gradient(126.33deg, #dcae3f 26.26%, #f0c144 108.32%);
-
 }
 
 
