@@ -3,8 +3,9 @@
   "a": {
     "type": "separator"
   },
+  "Novice":"新手",
   "guide": "入门指南",
-  "Learning_docs": "学习文档",
-  "ClI": "代码"
+  "Learning_docs": "学习文档"
+ 
 
 }

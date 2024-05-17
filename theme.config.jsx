@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaSquareXTwitter, FaGithub } from "react-icons/fa6";
-
 const Placeholder = () => {
   return "搜索文档";
 };
@@ -53,7 +52,7 @@ export default {
 
   //自定义导航栏
   navbar: {
-    extraContent: <></>,
+    extraContent: < ></>,
   },
 
   //指向文档存储库的链接字符串

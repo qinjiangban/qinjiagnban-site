@@ -13,29 +13,6 @@
             "pagination": false
         }
     },
-    "Novice": {
-        "title": "新手",
-        "theme": {
-            "layout": "full",
-            "breadcrumb": false,
-            "footer": false,
-            "sidebar": false,
-            "toc": false,
-            "pagination": false
-        }
-    },
-    "blog": {
-        "title": "博客",
-        "theme": {
-            "typesetting": "article",
-
-            "breadcrumb": false,
-            "footer": false,
-            "sidebar": true,
-            "toc": false,
-            "pagination": false
-        }
-    },
     "docs": {
         "title": "文档",
         "theme": {
@@ -44,6 +21,28 @@
             "sidebar": true,
             "toc": true,
             "pagination": true
+        }
+    },
+    "blog": {
+        "title": "博客",
+        "theme": {
+            "typesetting": "article",
+            "breadcrumb": false,
+            "footer": false,
+            "sidebar": true,
+            "toc": false,
+            "pagination": false
+        }
+    },
+    "web3": {
+        "title": "打赏",
+        "theme": {
+            "layout": "raw",
+            "breadcrumb": false,
+            "footer": false,
+            "sidebar": false,
+            "toc": false,
+            "pagination": false
         }
     }
 }

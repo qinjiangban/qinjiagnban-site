@@ -1,3 +1,5 @@
+
+
 :root {
 	/* docs */
 	--nextra-primary-hue: 45deg;
@@ -18,7 +20,7 @@
 
 .nx-inset-x-0:hover {
     font-size: 1rem !important;
-    color: #d59d16;
+    color: #ea7411;
 }
 
 .nx-text-center {
@@ -28,17 +30,17 @@
 .nx-text-center:hover {
     text-align: center !important;
     font-size: 1rem !important;
-    color: #d59d16;
+    color: #ea7411;
 }
 
 .nx-whitespace-nowrap{
     font-size: 1rem !important;
-    color: #d59d16;
+    color: #ea7411;
 }
 
 :is(html[class~=dark] .dark\:nx-bg-neutral-800) {
     --tw-bg-opacity: 1;
-color: #d59d16;
+color: #ea7411;
 }
 
 @media only screen and (max-width: 767px) {
@@ -50,13 +52,13 @@ color: #d59d16;
 
 /*--选择器----*/
 ::selection {
-    background: #d59d16;
+    background: #ea7411;
     color: var(--shiki-color);
 }
 
 ::-moz-selection {
     color: var(--shiki-color);
-    background: #d59d16;
+    background: #ea7411;
 }
 
 @media screen and (min-width:701px) {
