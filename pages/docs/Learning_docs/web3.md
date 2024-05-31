@@ -1,9 +1,8 @@
 ---
-title: 入门指南
+title: 什么是 Web3?
 route: Getting_Started_Guide
 ---
 
-# 入门指南
 
 # 什么是 Web3?
 

@@ -60,7 +60,7 @@ export default {
 
   //侧边栏
   sidebar: {
-    defaultMenuCollapseLevel: 2, //指定默认情况下折叠左侧菜单的文件夹级别。
+    defaultMenuCollapseLevel: 1, //指定默认情况下折叠左侧菜单的文件夹级别。
     autoCollapse: false, //自动折叠非活动文件夹
     toggleButton: true, //侧边栏隐藏按钮
   },

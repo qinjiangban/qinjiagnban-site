@@ -6,7 +6,6 @@ import {
 } from 'wagmi'
 import { parseEther } from 'viem'
 import Link from 'next/link'
-
 export default function SendTransaction() {
     const {
         data: hash,
@@ -29,11 +28,11 @@ export default function SendTransaction() {
         })
 
     return (
-        <div >
+        <div>
 
             <form onSubmit={submit} >
                 {/* <input name="address" placeholder="区块链地址" required style={{ width: '100%', padding: '10px', boxShadow: '0 0 2px #ea7411' }} /> */}
-                <input name="value" placeholder="打赏数量" required style={{ marginLeft:'10px',padding: '10px', boxShadow: '0 0 2px #ea7411' }} />
+                <input name="value" placeholder="打赏数量" required style={{ padding: '10px', boxShadow: '0 0 2px #ea7411' }} />
                 <button
                     disabled={isPending}
                     type="submit"
@@ -44,7 +43,9 @@ export default function SendTransaction() {
                 </button>
 
 
-                {hash && <div>交易哈希: <Link href={`https://www.oklink.com/zh-hans/multi-search#key=${hash}`} target='_blank'></Link> </div>}
+                {hash && <div>交易哈希: <Link href={`https://www.oklink.com/zh-hans/multi-search#key=${hash}`} target='_blank'
+                className='web3_link'
+                >{hash}↗</Link> </div>}
 
                 {isConfirming && <div className='Card'>正在等待确认...</div>}
 

@@ -6,13 +6,13 @@ import bnb from '../../public/bnb.jpg';
 export default function Novice() {
     const Dataimg = [
     {
-        h1: '欧易交易所注册邀请链接',
+        h1: '欧易交易所',
         link: 'https://ouxyi.clinic/join/7098194',
         name: 'www.okx.com',
         img: okx,
     },
     {
-        h1: '币安交易所注册邀请链接',
+        h1: '币安交易所',
         link: 'https://accounts.binance.com/register?ref=116428206',
         name: 'www.binance.com',
         img: bnb,
@@ -22,23 +22,33 @@ export default function Novice() {
         <>
 
 
-
+        <table>
+            <thead>
+                <tr>
+                    <th>标题</th>
+                    <th>链接</th>
+                    <th>图片</th>
+                </tr>
+            </thead>
+            <tbody>
+                {Dataimg.map((dataimg, index) => (
+                    <tr key={index}>
+                        <td>{dataimg.h1}</td>
+                        <td className='Novice_li'>
+                            <Link href={dataimg.link} target="_blank">
+                                {dataimg.name}↗
+                            </Link>
+                        </td>
+                        <td>
+                            <img src={dataimg.img} alt={dataimg.name} width={400}  />
+                        </td>
+                    </tr>
+                ))}
+            </tbody>
+        </table>
 
 
                
-                    <ul>
-                        {Dataimg.map((dataimg) => (
-                            <li className='Novice_li'>
-                                {dataimg.h1}:
-                                    <Link href={dataimg.link} target="_blank">
-                                        {dataimg.name}
-                                    </Link>
-                                
-                                <img src={dataimg.img} className='img' />
-                            </li>
-                        ))}
-                    </ul>
-           
 
      
         </>

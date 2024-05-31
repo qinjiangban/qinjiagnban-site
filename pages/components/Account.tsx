@@ -16,7 +16,9 @@ export default function Account() {
       {ensAvatar && <img alt="ENS Avatar" src={ensAvatar} />}
 
       当前连接账户:
-      <Link href={`https://www.oklink.com/multi-search#key=${ensName ? `${ensName} (${address})` : address}`} target='_blank'>
+      <Link href={`https://www.oklink.com/multi-search#key=${ensName ? `${ensName} (${address})` : address}`} 
+      className='web3_link'
+      target='_blank'>
         {address && <b>{ensName ? `${ensName} (${address})` : address}↗</b>}
       </Link>
 

@@ -1,0 +1,12 @@
+.web3 {
+    flex: 1;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 1526px;
+    gap: 10px;
+}
+.web3_link:hover {
+    color: #ea7411;
+}

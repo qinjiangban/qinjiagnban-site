@@ -2,6 +2,7 @@ import { useAccount } from 'wagmi'
 import Account from './components/Account'
 import WalletOptions from './components/WalletOptions'
 import SendTransaction from './components/SendTransaction'
+import './css/web3.css'
 export default function Web3() {
 function ConnectWallet() {
   const { isConnected } = useAccount()
@@ -12,7 +13,7 @@ function ConnectWallet() {
   </>
 }
    return (
-     <div>
+     <div className='web3'>
     <ConnectWallet/>
     <SendTransaction/>
      </div>

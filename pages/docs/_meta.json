@@ -3,9 +3,10 @@
   "a": {
     "type": "separator"
   },
-  "Novice":"新手",
-  "guide": "入门指南",
-  "Learning_docs": "学习文档"
+  "Novice":"新手入圈",
+  "Crypto": "加密圈",
+  "Learning_docs": "学习文档",
+  "Deep_learning": "深度学习"
  
 
 }
