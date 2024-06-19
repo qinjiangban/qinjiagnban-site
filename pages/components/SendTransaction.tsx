@@ -32,7 +32,7 @@ export default function SendTransaction() {
 
             <form onSubmit={submit} >
                 {/* <input name="address" placeholder="区块链地址" required style={{ width: '100%', padding: '10px', boxShadow: '0 0 2px #ea7411' }} /> */}
-                <input name="value" placeholder="打赏数量" required style={{ padding: '10px', boxShadow: '0 0 2px #ea7411' }} />
+                <input name="value" placeholder="打赏数量 ETH" required style={{ padding: '10px', boxShadow: '0 0 2px #ea7411' }} />
                 <button
                     disabled={isPending}
                     type="submit"

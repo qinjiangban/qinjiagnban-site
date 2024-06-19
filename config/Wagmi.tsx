@@ -8,7 +8,7 @@ import { http, createConfig } from 'wagmi'
 // Get projectId at https://cloud.walletconnect.com
 //const projectId = process.env.WALLET_CONNECT_ID || 'WALLET_CONNECT_ID'
 
-const metadata = {
+export const metadata = {
     name: '覃江扮',
     description: '覃江扮个人网站',
     url: 'http://qinjiangban.site',

@@ -2,6 +2,7 @@
     flex: 1;
     display: flex;
     margin: auto;
+
     flex-direction: column;
     padding: 1rem;
     max-width: 1526px;
@@ -9,4 +10,33 @@
 }
 .web3_link:hover {
     color: #ea7411;
+}
+
+.WalletOptions{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 4px;
+    box-shadow: #ea7411;
+   border: 1px;
+    border-color: #ea7411;
+}
+.img{
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.span{
+    flex:1 1 0%;
+    text-align: left;
 }
