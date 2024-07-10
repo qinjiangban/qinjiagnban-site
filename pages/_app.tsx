@@ -1,6 +1,7 @@
 import "./css/globals.css";
 import "./css/Novice.css";
 import "./css/Home.css";
+
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { WagmiProvider } from 'wagmi'
 
