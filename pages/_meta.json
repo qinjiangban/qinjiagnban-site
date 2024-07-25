@@ -13,6 +13,17 @@
             "pagination": false
         }
     },
+    "web3": {
+        "title": "打赏",
+        "theme": {
+            "layout": "raw",
+            "breadcrumb": false,
+            "footer": false,
+            "sidebar": false,
+            "toc": false,
+            "pagination": false
+        }
+    },
     "docs": {
         "title": "文档",
         "theme": {
@@ -30,17 +41,6 @@
             "breadcrumb": false,
             "footer": false,
             "sidebar": true,
-            "toc": false,
-            "pagination": false
-        }
-    },
-    "web3": {
-        "title": "打赏",
-        "theme": {
-            "layout": "raw",
-            "breadcrumb": false,
-            "footer": false,
-            "sidebar": false,
             "toc": false,
             "pagination": false
         }

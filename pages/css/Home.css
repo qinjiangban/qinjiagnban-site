@@ -1,12 +1,14 @@
 .Home {
-    height: 50dvh;
+    height: 100%;
+    padding: 8px;
 }
 
 .Home_b {
     width: 100%;
-    height: 350px;
+    height: 10%;
     /* background: linear-gradient(126.33deg, #dcad3fd5 26.26%, #f0c244e5 108.32%); */
     display: flex;
+    text-align: center;
     justify-content: space-evenly;
     margin: auto;
     flex-direction: column;
@@ -16,6 +18,9 @@
 
 .font_size {
     font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Cards {
@@ -23,13 +28,13 @@
     flex: 1;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .Card {
     font-weight: bold;
     font-weight: 700;
-    width: 100px;
+    width: 10rem;
     box-shadow: 0 0 2px #ea7411;
     padding: 10px;
     display: flex;
@@ -52,6 +57,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    margin-bottom: 100px;
     gap: 20px;
 }
 
@@ -62,4 +68,15 @@
 .Fa:hover {
     font-size: 2rem;
     color: #ea7411;
+}
+
+.text{
+    padding: 8px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.text_p{
+    width: 70vh;
 }

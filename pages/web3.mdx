@@ -7,7 +7,7 @@ function ConnectWallet() {
   const { isConnected } = useAccount()
   if (isConnected) return <Account />
   return <>
-    点击链接，已安装的钱包：
+    点击连接，已安装的钱包：
   <WalletOptions />
   </>
 }

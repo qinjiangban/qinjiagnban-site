@@ -27,11 +27,12 @@ export default function WalletOptions() {
       <div className='WalletOptions'>
         {walletConnectors.map((wc, index) => (
           <button
+            type="button"
             key={wc.logoSrc}
             onClick={() => connect({ connector: wc.connector })}
-            className='btn'
+            className='btn btn-outline-dark'
           >
-            <img src={wc.logoSrc} alt={wc.buttonText} className='img'/>
+            <img src={wc.logoSrc} alt={wc.buttonText} className='img' />
             <span className='span'>{wc.buttonText}</span>
           </button>
         ))}

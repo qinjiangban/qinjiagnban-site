@@ -26,7 +26,7 @@ export default {
   //搜索引擎优化选项
   useNextSeoProps() {
     return {
-      titleTemplate: "%s - JiangBan's Site",
+      titleTemplate: "%s - JiangBan Site",
     };
   },
   head: (
