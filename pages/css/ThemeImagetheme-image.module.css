@@ -1,0 +1,15 @@
+.imgDark {
+    display: none;
+    font-size: 2rem;
+  }
+   
+  @media (prefers-color-scheme: dark) {
+    .imgLight {
+      display: none;
+      font-size: 2rem;
+    }
+    .imgDark {
+      display: unset;
+      font-size: 2rem;
+    }
+  }

@@ -1,17 +1,50 @@
 import Link from "next/link";
+import Image from "next/image";
+import { getImageProps } from 'next/image'
+ 
 import { Callout, Cards, Card } from "nextra/components";
-import { FaSquareXTwitter, FaGithub ,FaLinkedin,FaTiktok } from "react-icons/fa6";
+import { FaSquareXTwitter, FaGithub ,FaLinkedin,FaTiktok, FaWeibo } from "react-icons/fa6";
+import ThemeImage from './components/ThemeImage'
+import LensBlack from '../public/Icon-T-Black.svg'
+import LensWhite from '../public/Icon-T-White.svg'
 
 export default function Home() {
+
+  const common = { alt: 'Theme Example', width: 48, height: 48 }
+  const {
+    props: { srcSet: dark },
+  } = getImageProps({ ...common, src: LensWhite })
+  const {
+    props: { srcSet: light, ...rest },
+  } = getImageProps({ ...common, src:LensBlack })
+
   return (
     <>
+    <style jsx>{`
+  .svg-icon {
+    fill: var(--svg-fill);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --svg-fill: white;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --svg-fill: black;
+    }
+  }
+`}</style>
       <div className="Home">
-           <Callout type="warning" emoji="⚠">
+
+        <div className="Home_b">
+          <Callout type="warning" emoji="⚠">
             网站所有内容仅用于学习参考，不构成任何投资建议！
           </Callout>
-        <div className="Home_b">
-          <p className="font_size">Qin Jiangban Site</p>
 
+          <p className="font_size">Qin Jiangban Site</p>
         </div>
 
         <div className="Cards">
@@ -31,18 +64,39 @@ export default function Home() {
         </div>
 
         <div className="Cards_1">
-          <Link href="https://github.com/qinjiangban" target="_blank" >
-            <FaGithub alt="Github" className="Fa" />
-          </Link>
-          <Link href="https://twitter.com/qinjiangban" target="_blank" >
-            <FaSquareXTwitter alt="X" className="Fa" />
-          </Link>
+ 
+
+          
+
+
+
+
           <Link href="https://www.linkedin.com/in/qinjiangban" target="_blank" >
             <FaLinkedin alt="FaLinkedin" className="Fa" />
           </Link>
-          <Link href="https://www.douyin.com/user/MS4wLjABAAAAsUADy13IzWaY6iQ4yXknR_W8wCZPQCBA68G6wHPYd3k?vid=7393877028707044660" target="_blank" >
+
+         <Link href="https://github.com/qinjiangban" target="_blank" >
+            <FaGithub alt="Github" className="Fa" />
+          </Link>
+
+        <Link href="https://www.douyin.com/user/MS4wLjABAAAAsUADy13IzWaY6iQ4yXknR_W8wCZPQCBA68G6wHPYd3k?vid=7393877028707044660" target="_blank" >
             <FaTiktok alt="FaTiktok" className="Fa" />
-          </Link>          
+          </Link>     
+          
+<Link href="https://weibo.com/u/6455980140" target='_blank'>
+            <FaWeibo alt="Weibo" className="Fa" />
+</Link>
+
+  
+
+          <Link href="https://twitter.com/qinjiangban" target="_blank" >
+            <FaSquareXTwitter alt="X" className="Fa" />
+          </Link>
+
+          <Link href="https://share.lens.xyz/u/lens/qinjiangban" target="_blank" className="Fa">
+          Lens
+          </Link>     
+          
         </div>
 
 
