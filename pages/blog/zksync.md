@@ -2,6 +2,7 @@
 title: zkSync
 ---
 # zkSync
+<img src='https://zksync.io/graphics/hero-mobile.webp' alt='zksync'>
 
 以后会不会一个Dapp和协议就有一个自己的链，但是这些链的数据和状态都是能互通的，可以定制自己的代币做定制链的gas费或无gas，zk框架内的应用链安全性像Cosmos生态“你中有我，我中有你”，质押$ZKS可以拿到在zk超级链框架内发行的币，和质押$ATOM类似。
 

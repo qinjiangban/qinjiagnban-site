@@ -2,6 +2,9 @@
 title: Lens协议
 ---
 # Lens协议
+
+<img src='https://raw.githubusercontent.com/lens-protocol/brand-kit/main/01%20Logo/PNG/%402x/Text-White_%402x.png' alt='lens'>
+
 Web3创作者经济和去中心化社交网络，
 数据和内容属于原作者，平台软件只是为你提供交互，
 你发布的内容有收益直接转到对应区块链地址帐户。
@@ -15,3 +18,7 @@ Web3平台的治理也是多方通过DAO参与治理
 
 和Web3音乐平台类似，周杰伦发行音乐，QQ音乐平台会分走一部分。
 和Web3电影，周星驰的电影发行，投资人、众筹、电影原创或原著者、演员、导演只要绑定NFT电影票，每售卖NFT电影票的收益自动按分成分到对应帐户。购买NFT会有1次使用权到平台，也有平台买下NFT版权期限，免费或会员制。
+
+---
+>  2024/09/09
+
