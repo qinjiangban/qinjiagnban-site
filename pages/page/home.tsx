@@ -4,39 +4,14 @@ import { getImageProps } from 'next/image'
 
 import { Callout, Cards, Card } from "nextra/components";
 import { FaSquareXTwitter, FaGithub, FaLinkedin, FaTiktok, FaWeibo } from "react-icons/fa6";
-import ThemeImage from '../components/ThemeImage'
-import LensBlack from '../../public/Icon-T-Black.svg'
-import LensWhite from '../../public/Icon-T-White.svg'
+
+import Lenslogo from '../../public/Icon-T-Black_@2x.png'
 
 export default function Home() {
 
-    const common = { alt: 'Theme Example', width: 48, height: 48 }
-    const {
-        props: { srcSet: dark },
-    } = getImageProps({ ...common, src: LensWhite })
-    const {
-        props: { srcSet: light, ...rest },
-    } = getImageProps({ ...common, src: LensBlack })
 
     return (
         <>
-            <style jsx>{`
-  .svg-icon {
-    fill: var(--svg-fill);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --svg-fill: white;
-    }
-  }
-
-  @media (prefers-color-scheme: light) {
-    :root {
-      --svg-fill: black;
-    }
-  }
-`}</style>
             <div className="Home">
 
                 <div className="Home_b">
@@ -64,7 +39,7 @@ export default function Home() {
                 </div>
 
                 <div className="Cards_1">
-                    <Link href="https://www.linkedin.com/in/qinjiangban" target="_blank" >
+                    <Link href="https://www.linkedin.com/in/qinjiangban" target="_blank"  >
                         <FaLinkedin className="Fa" />
                     </Link>
 
@@ -85,7 +60,7 @@ export default function Home() {
                     </Link>
 
                     <Link href="https://share.lens.xyz/u/lens/qinjiangban" target="_blank" className="Fa">
-                        Lens
+                        Lnes
                     </Link>
                 </div>
 
