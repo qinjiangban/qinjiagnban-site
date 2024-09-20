@@ -61,6 +61,30 @@
     gap: 20px;
 }
 
+
+
+.imgDark {
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .imgLight {
+        display: none;
+    }
+
+    .imgDark {
+        display: unset;
+    }
+}
+
+.Icon_T_White:hover {
+    background: #ea7411;
+}
+
+.Icon_T_Black:hover {
+    background: #ea7411;
+}
+
 .Fa {
     font-size: 2rem;
 }
@@ -70,13 +94,14 @@
     color: #ea7411;
 }
 
-.text{
+.text {
     padding: 8px;
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
 }
-.text_p{
+
+.text_p {
     width: 70vh;
 }

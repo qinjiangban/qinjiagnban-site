@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Connector, useConnect } from 'wagmi'
 import { /* walletConnect,  safe, */ injected, metaMask, coinbaseWallet, } from 'wagmi/connectors'
-import { metadata } from '../../config/Wagmi'
+import { metadata } from '../config/Wagmi'
 
 export default function WalletOptions() {
   const { connectors, connect } = useConnect()

@@ -1,11 +1,7 @@
 import Link from "next/link";
-import Image from "next/image";
-import { getImageProps } from 'next/image'
-
 import { Callout, Cards, Card } from "nextra/components";
 import { FaSquareXTwitter, FaGithub, FaLinkedin, FaTiktok, FaWeibo } from "react-icons/fa6";
-
-import Lenslogo from '../../public/Icon-T-Black_@2x.png'
+import Image from "next/image";
 
 export default function Home() {
 
@@ -60,7 +56,7 @@ export default function Home() {
                     </Link>
 
                     <Link href="https://share.lens.xyz/u/lens/qinjiangban" target="_blank" className="Fa">
-                        Lnes
+                    <ThemeImage />
                     </Link>
                 </div>
 
@@ -121,3 +117,24 @@ export default function Home() {
         </>
     );
 }
+
+const ThemeImage = (props) => {
+    const { srcLight, srcDark, ...rest } = props
+  
+    return (
+      <>
+        <Image {...rest}
+          src="/logo/Icon-T-Black_@2x.png"
+          alt="Lens-Black"
+          className={`imgLight Icon_T_Black`}
+          width={24} height={24}
+        />
+        <Image {...rest}
+          src="/logo/Icon-T-White_@2x.png"
+          alt="Lens-White"
+          className={`imgDark Icon_T_White`} 
+          width={24} height={24}
+        />
+      </>
+    )
+  }

@@ -1,7 +1,7 @@
-import "./css/globals.css";
-import "./css/Novice.css";
-import "./css/Home.css";
-import '../pages/css/web3.css'
+import "../css/globals.css";
+import "../css/Novice.css";
+import "../page/Home.css";
+import '../page/web3.css'
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { WagmiProvider } from 'wagmi'
@@ -18,10 +18,10 @@ export default function App({ Component, pageProps }) {
 
     <div className={inter.className}>
       <WagmiProvider config={config}>
-      <QueryClientProvider client={queryClient}> 
-        <Component {...pageProps} />
-        </QueryClientProvider> 
-    </WagmiProvider>
+        <QueryClientProvider client={queryClient}>
+          <Component {...pageProps} />
+        </QueryClientProvider>
+      </WagmiProvider>
 
     </div>
   );

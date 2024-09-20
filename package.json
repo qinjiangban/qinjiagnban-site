@@ -3,22 +3,24 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "serve": "serve@latest out",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.36.2",
-    "next": "^14.2.7",
+    "@tanstack/react-query": "^5.56.2",
+    "next": "^14.2.13",
     "nextra": "^2.13.2",
     "nextra-theme-docs": "^2.13.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-icons": "^4.12.0",
-    "viem": "^2.10.9",
-    "wagmi": "^2.9.2"
+    "viem": "^2.21.10",
+    "wagmi": "^2.12.12"
   },
   "devDependencies": {
-    "typescript": "5.4.5"
+    "typescript": "^5.4.5"
   }
 }

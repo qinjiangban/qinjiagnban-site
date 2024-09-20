@@ -3,17 +3,8 @@ a:hover {
 }
 
 :root {
-	/* docs */
 	--nextra-primary-hue: 45deg;
 	--nextra-primary-saturation: 86.45%;
-}
-.dark {
-	/* docs */
-	--nextra-primary-hue: 45deg;
-	/* 主要色调 */
-	--nextra-primary-saturation: 86.45%;
-	/* 初级饱和度 */
-
 }
 
   

@@ -1,8 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
-import { FaSquareXTwitter, FaGithub } from "react-icons/fa6";
 const Placeholder = () => {
-  return "搜索文档";
+  return "搜索";
 };
 
 const Feedback = () => {
@@ -62,7 +60,7 @@ export default {
   sidebar: {
     defaultMenuCollapseLevel: 1, //指定默认情况下折叠左侧菜单的文件夹级别。
     autoCollapse: false, //自动折叠非活动文件夹
-    toggleButton: true, //侧边栏隐藏按钮
+    toggleButton: false, //侧边栏隐藏按钮
   },
 
   //目录侧边栏
@@ -76,7 +74,18 @@ export default {
   editLink: { component: EditLink },
   //呈现上次更新日期的函数
   gitTimestamp: GitTimestamp,
-
+  //主题切换
+  darkMode:false,
+  themeSwitch: {
+    component:false,
+/*     useOptions() {
+      return {
+        light: 'Light',
+        dark: 'Dark',
+        system: 'System'
+      }
+    } */
+  },
   //页脚
   footer: {},
 };
