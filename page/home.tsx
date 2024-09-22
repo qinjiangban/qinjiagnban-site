@@ -18,21 +18,7 @@ export default function Home() {
                     <p className="font_size">Qin Jiangban Site</p>
                 </div>
 
-                <div className="Cards">
-                    <Link href="/web3" className="Card">
-                        打赏 💰
-                    </Link>
 
-                    <Link href="/docs" className="Card">
-                        文档 📖
-                    </Link>
-
-                    <Link href="/blog" className="Card">
-                        博客 📰
-                    </Link>
-
-
-                </div>
 
                 <div className="Cards_1">
                     <Link href="https://www.linkedin.com/in/qinjiangban" target="_blank"  >
@@ -41,10 +27,6 @@ export default function Home() {
 
                     <Link href="https://github.com/qinjiangban" target="_blank" >
                         <FaGithub className="Fa" />
-                    </Link>
-
-                    <Link href="https://www.douyin.com/user/MS4wLjABAAAAsUADy13IzWaY6iQ4yXknR_W8wCZPQCBA68G6wHPYd3k?vid=7393877028707044660" target="_blank" >
-                        <FaTiktok className="Fa" />
                     </Link>
 
                     <Link href="https://weibo.com/u/6455980140" target='_blank'>
