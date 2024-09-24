@@ -21,13 +21,7 @@ export default function Home() {
 
 
                 <div className="Cards_1">
-                    <Link href="https://www.linkedin.com/in/qinjiangban" target="_blank"  >
-                        <FaLinkedin className="Fa" />
-                    </Link>
 
-                    <Link href="https://github.com/qinjiangban" target="_blank" >
-                        <FaGithub className="Fa" />
-                    </Link>
 
                     <Link href="https://weibo.com/u/6455980140" target='_blank'>
                         <FaWeibo className="Fa" />
@@ -38,7 +32,15 @@ export default function Home() {
                     </Link>
 
                     <Link href="https://share.lens.xyz/u/lens/qinjiangban" target="_blank" className="Fa">
-                    <ThemeImage />
+                        <ThemeImage />
+                    </Link>
+
+                    <Link href="https://github.com/qinjiangban" target="_blank" >
+                        <FaGithub className="Fa" />
+                    </Link>
+
+                    <Link href="https://www.linkedin.com/in/qinjiangban" target="_blank"  >
+                        <FaLinkedin className="Fa" />
                     </Link>
                 </div>
 
@@ -102,21 +104,21 @@ export default function Home() {
 
 const ThemeImage = (props) => {
     const { srcLight, srcDark, ...rest } = props
-  
+
     return (
-      <>
-        <Image {...rest}
-          src="/logo/Icon-T-Black_@2x.png"
-          alt="Lens-Black"
-          className={`imgLight Icon_T_Black`}
-          width={24} height={24}
-        />
-        <Image {...rest}
-          src="/logo/Icon-T-White_@2x.png"
-          alt="Lens-White"
-          className={`imgDark Icon_T_White`} 
-          width={24} height={24}
-        />
-      </>
+        <>
+            <Image {...rest}
+                src="/logo/Icon-T-Black_@2x.png"
+                alt="Lens-Black"
+                className={`imgLight Icon_T_Black`}
+                width={32} height={32}
+            />
+            <Image {...rest}
+                src="/logo/Icon-T-White_@2x.png"
+                alt="Lens-White"
+                className={`imgDark Icon_T_White`}
+                width={32} height={32}
+            />
+        </>
     )
-  }
+}
