@@ -37,6 +37,11 @@ npm audit fix
 npm outdated
 ```
 
+同步 package.json 中的版本号
+```bash
+npx npm-check-updates -u
+```
+
 更新到最新模块
 ```bash
 npm i next@latest
